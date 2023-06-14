@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+       body{
+        background-image: url(./form.png);
+        opacity: 0.7;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+        .card{
+            display: grid;
+            min-width: 70%;
+        }
+        
+        span{
+            color: red;
+        }
+         </style>
+    
+    <title>Forms</title>
+    
+
+    </script>
+</head>
+<body>
+    
+   <div class="container">
+     <h4 class="title" style="text-align: center; margin-top: 10px; color: beige;">Personal Details</h4>
+   
+    <div class="card" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; margin: 30px; padding: 15px;">
+        <form class="row g-3 needs-validation" name="form" id="myForm" novalidate>
+            <div class="col-md-3">
+                <label for="validationCustom01" class="form-label"><span>*</span></label>
+                <select class="form-select" id="validationCustom01" name="bname" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>Mr</option>
+                  <option>Mrs</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select.
+                </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom02" class="form-label">Name<span>*</span></label>
+              <input type="text" class="form-control form-control-sm" id="validationCustom02" name="name"  required>
+              <div class="invalid-feedback">
+                Please enter name.
+              </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom03" class="form-label">Email<span>*</span></label>
+                <input name="email" type="email" class="form-control form-control-sm" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please enter your mail.
+                  </div>
+              </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Age<span>*</span></label>
+              <div class="input-group has-validation">
+                
+                <input type="number" class="form-control form-control-sm" id="validationCustom04" aria-describedby="inputGroupPrepend" name="age" required>
+                <div class="invalid-feedback">
+                  Please enter your age.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">DOB<span>*</span></label>
+              <input type="date" class="form-control form-control-sm" id="validationCustom05" name="dob" required>
+              <div class="invalid-feedback">
+                Please provide dob.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom06" class="form-label">Aadhar<span>*</span></label>
+                <input type="number" class="form-control form-control-sm" id="validationCustom06" aria-describedby="inputGroupPrepend" name="aadhar" required>
+                <div class="invalid-feedback">
+                  Please enter aadhar id.
+                </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom07" class="form-label">Nationality<span>*</span></label>
+              <input type="text" class="form-control form-control-sm" id="validationCustom07" name="nation" required>
+              <div class="invalid-feedback">
+                Please provide a valid nationality.
+              </div>
+            </div>
+           
+            <br>
+            <div class="col-md-3">
+                <label for="validationCustom08" class="form-label">Country<span>*</span></label>
+                <select class="form-select" id="validationCustom08" name="country" required>
+                  <option selected disabled value=""></option>
+                  <option>India</option>
+                  <option>Others</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select country.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom09" class="form-label">State<span>*</span></label>
+                <select class="form-select" id="validationCustom09" name="state" required>
+                  <option selected disabled value=""></option>
+                  <option>Tamilnadu</option>
+                  <option>Kerala</option>
+                  <option>Karnataka</option>
+                  <option>Others</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select state.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom10" class="form-label">City<span>*</span></label>
+                <select class="form-select" id="validationCustom10" name="city" required>
+                  <option selected disabled value=""></option>
+                  <option>Chennai</option>
+                  <option>Erode</option>
+                  <option>Combatore</option>
+                  <option>Others</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select city.
+                </div>
+              </div>
+              <br>
+            <div class="col-md-4">
+                <label for="adult">Are you Adult?<span>*</span></label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                    </div>
+                   <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom11" class="form-label">Address<span>*</span></label>
+                <textarea type="text" class="form-control" id="validationCustom11" name="address" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter address.
+                </div>
+              </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit" id="btn"  value="submit">Submit</button>
+              <button class="btn btn-warning" type="reset">Reset</button>
+            </div>
+          </form>
+    </div>
+    
+    </div>
+   </div>
+   <script>
+
+   
+(function () {
+  'use strict'
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          
+          event.preventDefault()
+          
+          form.classList.add('was-validated')
+        }
+        else{
+          const {bname, name, email, age, dob, aadhar, nation, country, state, city, address} = form.elements;
+          
+          document.write("Name:" + bname.value + "." +  name.value)
+          document.write("<br><br>Email:" + email.value)
+          document.write("<br><br>Age:" + age.value)
+          document.write("<br><br>DOB:" + dob.value)
+          document.write("<br><br>Aadhar:" + aadhar.value)
+          document.write("<br><br>Nation:" + nation.value)
+          document.write("<br><br>Country:" + country.value)
+          document.write("<br><br>State:" + state.value)
+          document.write("<br><br>City:" + city.value)
+          document.write("<br><br>Address:" + address.value)
+          
+        }
+        
+      }, false)
+    })
+})()
+
+
+ 
+
+
+  
+  </script>
+</body>
+</html>
